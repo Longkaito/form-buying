@@ -24,7 +24,7 @@ export class AppComponent implements AfterViewInit {
     }
   }
 
-  count: number = 0;
+  count: number = 1;
 
   render(callback: (data: string) => any) {
     let htmls = this.inventors
@@ -56,7 +56,6 @@ export class AppComponent implements AfterViewInit {
     address: string,
     note: string
   ) {
-    ++this.count;
     // Xử lý price hiển thị ra view
     let handleNumber = price;
     var pattern = /(-?\d+)(\d{3})/;
@@ -74,6 +73,9 @@ export class AppComponent implements AfterViewInit {
     // kiểm tra đã nhập đủ trường dữ liệu chưa
     if (fullName && email && price && address) {
       this.inventors.push(data);
+      this.count++;
+    } else {
+      alert('Vui lòng nhập các trường dữ liệu bắt buộc');
     }
     this.render(this.show);
   }
