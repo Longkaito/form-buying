@@ -3,6 +3,9 @@
   padding-top: 10rem;
   background-color: #f1f1f1;
   height: 100vh;
+  .col {
+    margin-bottom: 5rem;
+  }
   .left {
     background-color: #fff;
     &__title {
@@ -67,7 +70,7 @@
   }
 
   .right {
-    height: 50rem;
+    padding-bottom: 5rem;
     background-color: #fff;
     &__title {
       padding-top: 2rem;
