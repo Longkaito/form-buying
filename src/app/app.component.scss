@@ -1,0 +1,94 @@
+.container {
+  font-size: 1.6rem;
+  padding-top: 10rem;
+  background-color: #f1f1f1;
+  height: 100vh;
+  .left {
+    background-color: #fff;
+    &__title {
+      padding-top: 3rem;
+      h3,
+      p {
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+      p {
+        font-weight: 300;
+      }
+    }
+
+    &__form,
+    &__submit {
+      padding: 2rem;
+      .form-group {
+        margin-bottom: 2rem;
+        h5 {
+          padding-bottom: 0.5rem;
+        }
+        input {
+          width: 100%;
+          padding: 1rem;
+          outline: none;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          &:hover {
+            border: 1px solid #20b2aa;
+          }
+        }
+        &:not(:last-child) {
+          h5 {
+            &::after {
+              content: " *";
+              color: red;
+            }
+          }
+        }
+        span {
+          font-size: 1.2rem;
+          color: red;
+        }
+      }
+    }
+
+    &__submit {
+      button {
+        background-color: #20b2aa;
+        color: #fff;
+        border: none;
+        width: 100%;
+        padding: 1rem 0;
+        border-radius: 5px;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .right {
+    height: 50rem;
+    background-color: #fff;
+    &__title {
+      padding-top: 2rem;
+      text-align: center;
+    }
+    &__table {
+      padding-top: 3rem;
+      width: 100%;
+      display: block;
+      table,
+      tr,
+      td {
+        // border: 1px solid #ccc;
+        // border-collapse: collapse;
+        height: 5rem;
+      }
+      table {
+        width: 100%;
+      }
+      .list {
+      }
+    }
+  }
+}
